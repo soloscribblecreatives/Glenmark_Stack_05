@@ -345,7 +345,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_4"><img src="slide1/s1_4.png"/></div><div class="s1_5_wrap"><div class="s1_5"><img src="slide1/s1_5.png"/></div></div><div class="s1_6_wrap"><div class="s1_6"><img src="slide1/s1_6.png"/></div></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
 	break;
 
 }
@@ -369,6 +369,8 @@ function open_page(url,page_id){
 		var slideid=localStorage.getItem("currentslide");
 		toCaptureTime(slideid);	
 	}
+
+	
 	// toCaptureTime(page_id);
 	 localStorage.setItem("currentslide",page_id);
 	 currentContentNSlide = currentContentId+"_"+contentName+"_"+page_id;
@@ -417,7 +419,6 @@ function open_page(url,page_id){
 		}
 	}
 
-
 	function checkBtns(refNum){
 		switch(refNum){
 			case 1:
@@ -425,6 +426,7 @@ function open_page(url,page_id){
             break;
 		}
 	}
+
 
 	function currentSlide(){
 		var curr_id =  parseInt($("#wrapper").attr("rel"));
@@ -475,11 +477,11 @@ function currentTimeInDatabaseFormat(){//to get current time in dd-mm-yyyy hh:mm
 /*--------------------- animation javascript -----------------------*/
 
 function s1_pop1() {
-	$('.s1_5').css("display","block");
+	$('.s1_6').css("display","block");
 	$('.s1_c1ose1').css("display","block");
 }
 
 function s1_close1() {
-	$('.s1_5').css("display","none");
+	$('.s1_6').css("display","none");
 	$('.s1_c1ose1').css("display","none");
 }

@@ -12,57 +12,75 @@
 
 .s1_2 {
 	position: absolute;
-  left: 140px;
-  top: 89px;
-  width: 838px;
-  height: 538px;
+	width: 493px;
+	height: 172px;
+	left: 469px;
+	top: 168px;
 	animation: fadeInRight 0.5s;
-	animation-delay: 0.0s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 2;
 }
 
 .s1_3 {
 	position: absolute;
-	width: 459px;
-	height: 172px;
-	left: 282px;
-	top: 59px;
-	animation: fadeInRight 1s;
-	animation-delay: 0.5s;
+	width: 489px;
+	height: 138px;
+	left: 488px;
+	top: 415px;
+	animation: fadeInRight 0.5s;
+	animation-delay: 1s;
 	animation-fill-mode: both;
-	z-index: 3;
+	z-index: 2;
 }
 
 .s1_4 {
 	position: absolute;
-	width: 387px;
-	height: 314px;
-	left: 583px;
-	top: 281px;
-	animation: fadeInRight 1s;
-	animation-delay: 0.5s;
+	width: 559px;
+	height: 53px;
+	left: 421px;
+	top: 646px;
 	animation-fill-mode: both;
-	z-index: 4;
+	z-index: 3;
+}
+
+.s1_5_wrap {
+	position: absolute;
+	width: 124px;
+	height: 118px;
+	left: 879px;
+	top: 549px;
+	animation: fadeIn 0.5s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 2;
 }
 
 .s1_5 {
 	position: absolute;
+	animation: pulse 1s infinite;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.s1_6 {
+	position: absolute;
 	width: 974px;
 	height: 94px;
-	left: 27px;
-	top: 622px;
+	left: 26px;
+	top: 620px;
 	display: none;
-	z-index: 6;
+	z-index: 4;
 }
 
 .s1_pop1 {
 	position: absolute;
 	height: 80px;
 	width: 80px;
-	right: 32px;
+	right: 35px;
 	bottom: 0px;
-	z-index: 10;
+	z-index: 3;
 }
 
 .s1_c1ose1 {
@@ -70,30 +88,30 @@
 	width: 974px;
 	height: 94px;
 	left: 25px;
-	bottom: 58px;
+	top: 620px;
 	display: none;
-	z-index: 8;
+	z-index: 6;
 }
 
 @-webkit-keyframes revealStrip {
  0% {
-   clip: rect(0px,0px,74px,0px);
+   clip: rect(0px,0px,54px,0px);
    opacity: 1;
  }
  
  100% {
-   clip: rect(0px,702px,74px,0px);
+   clip: rect(0px,574px,54px,0px);
    opacity: 1;
  }
 }
 @keyframes revealStrip {
  0% {
-   clip: rect(0px,0px,74px,0px);
+   clip: rect(0px,0px,54px,0px);
    opacity: 1;
  }
  
  100% {
-   clip: rect(0px,702px,74px,0px);
+   clip: rect(0px,574px,54px,0px);
    opacity: 1;
  }
 }

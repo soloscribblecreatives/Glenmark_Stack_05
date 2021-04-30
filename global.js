@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 12){//number 3 is number of total slides present
+	if(nextSlideNo <= 27){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 12){
+	if(page_id <= 27){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 13){
+		if(page_id == 28){
             flag=1;
         }
 	}
@@ -419,6 +419,51 @@ switch(pg_id){
 	break;
 	case 12:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="12/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 13:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="13/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 14:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="14/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 15:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="15/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 16:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="16/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;	
+	case 17:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="17/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;	
+	case 18:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="18/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 19:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="19/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 20:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="20/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 21:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="21/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 22:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="22/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 23:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="23/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 24:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="24/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 25:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="25/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 26:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="26/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
+	break;
+	case 27:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><iframe src="27/html/index.html" class="background1" height="768" width="1024" frameBorder="0" title="Iframe Example"></iframe>';
 	break;
 }
 

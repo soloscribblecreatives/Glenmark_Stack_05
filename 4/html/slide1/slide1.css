@@ -12,33 +12,54 @@
 
 .s1_2 {
 	position: absolute;
-  left: 592px;
-  top: 119px;
-  width: 358px;
-  height: 530px;
-	animation: fadeInRight 0.5s;
-	animation-delay: 0.0s;
+	width: 567px;
+	height: 467px;
+	left: 436px;
+	top: 110px;
+	animation: fadeInRight 1s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 2;
 }
 
 .s1_3 {
 	position: absolute;
-	width: 387px;
-	height: 209px;
-	left: 583px;
-	top: 360px;
-	animation: fadeInRight 1s;
-	animation-delay: 0.5s;
+	width: 763px;
+	height: 74px;
+	left: 224px;
+	top: 660px;
+/* 	animation: fadeInRight 1s;
+	animation-delay: 0.5s; */
 	animation-fill-mode: both;
-	z-index: 3;
+	z-index: 2;
+}
+
+.s1_4 {
+	position: absolute;
+	width: 974px;
+	height: 94px;
+	left: 32px;
+	bottom: 58px;
+	display: none;
+	z-index: 4;
+}
+
+.s1_5 {
+	position: absolute;
+	width: 90px;
+	height: 63px;
+	left: 886px;
+	top: 634px;
+	animation: flash 5s infinite;
+	animation-delay: 0.5s;
+	z-index: 2;
 }
 
 .s1_pop1 {
 	position: absolute;
 	height: 80px;
 	width: 80px;
-	right: 32px;
+	right: 35px;
 	bottom: 0px;
 	z-index: 3;
 }
@@ -47,7 +68,7 @@
 	position: absolute;
 	width: 974px;
 	height: 94px;
-	left: 25px;
+	left: 32px;
 	bottom: 58px;
 	display: none;
 	z-index: 6;

@@ -12,8 +12,8 @@ var currentContentNSlide ='';
 //alert("++++++++++++"+custcomslideflag1+"+++++++custcomslideid+++++++"+custcomslideid1);
 	if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' &&  localStorage.getItem("currentcustomslideflag") =='true'){
 		var custcomslideid1=parseInt(localStorage.getItem("currentcontentcustomslideId"));
+		
 		//step 2:
-
 		currentContentNSlide = currentContentId+"_"+contentName+"_"+custcomslideid1;
 		//step 2 ends here
 		localStorage.setItem("current",currentContentNSlide);
@@ -99,6 +99,7 @@ function touchHandler(e) {
 		console.log("swipeleft"+localStorage.getItem("currentslide"));
 		localStorage.setItem("previousslide",localStorage.getItem("currentslide"));
 		//step 4 ends here
+
 		//alert("swipeleft");
 		//myconsole("swipeleft");
 		var page_id =  parseInt($("#wrapper").attr("rel"));
@@ -116,6 +117,7 @@ function touchHandler(e) {
 		console.log("swiperight"+localStorage.getItem("currentslide"));
 		localStorage.setItem("previousslide",localStorage.getItem("currentslide"));
 		//step 5 ends here 
+
 			//alert("swiperight");
 		//myconsole("swiperight");
 		var page_id =  parseInt($("#wrapper").attr("rel"));
@@ -134,7 +136,10 @@ function touchHandler(e) {
         //Default is 75px, set to 0 for demo so any distance triggers swipe
          threshold:0
 	});
+
+
 });
+
 
 //step 6:-
 function toCaptureTime(page_id){
@@ -149,39 +154,31 @@ function toCaptureTime(page_id){
 	if(temp == null){
 		
 		if (currentSlideNo!=0){
+
+
+
 			localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_"+currentSlideNo ,startTime);
 
 			//to capture start time of slide in db format
 			var startTimeInDBFormat = currentTimeInDatabaseFormat();
 			//alert(startTimeInDBFormat);
 
+
+
+
 			localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_"+currentSlideNo ,startTimeInDBFormat);
 		}
 }
 else
 {
-
 var existingTime = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+currentSlideNo);
 var newTime = Date.now();
 var newSlideTime = (newTime - existingTime);
-
-// alert(currentSlideNo + " slide time : " + (newSlideTime/1000) ); // time taken to view that particular slide
-
-//to capture end time of slide in db format
 var endTimeInDBFormat = currentTimeInDatabaseFormat();
-//alert(endTimeInDBFormat);/* 
-/* 
-alert('do calculations and update time====else==_EndTime_======'); */
-
-
 var EndTimeNext = localStorage.getItem(currentContentId+"_"+contentName+"_EndTime_"+currentSlideNo);
 console.log("++++++++EndTimeNext++++++++"+EndTimeNext+"++++++currentContentId+++"+currentContentId+"_"+contentName+"_EndTime_"+currentSlideNo);
 if(EndTimeNext == null){
-	//this time for which the slide was viewed
-
-
 localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_"+currentSlideNo ,(newSlideTime/1000) );
-
 
 localStorage.setItem(currentContentId+"_"+contentName+"_EndTime_"+currentSlideNo ,endTimeInDBFormat);
 }
@@ -193,12 +190,10 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 
 }else{
 
-
 	var nextSlideNo = currentSlideNo + 1 ;
 	
  } 
- 
-	if(nextSlideNo <= 9){//number 3 is number of total slides present
+	if(nextSlideNo <= 1){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -208,38 +203,28 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 				var nextSlideStartTime =  Date.now();
 				localStorage.setItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo ,nextSlideStartTime);
 				localStorage.setItem(currentContentId+"_"+contentName+"_totalTime_slideNo_"+nextSlideNo ,0);
-
-
-
 				//to capture start time of next slide in db format
 				var startTimeNextInDBFormat = currentTimeInDatabaseFormat();
-				//alert(startTimeNextInDBFormat);
-				/* 
-				alert("+++else++_StartTime_++++currentSlideNo++++"+nextSlideNo); */
 				localStorage.setItem(currentContentId+"_"+contentName+"_StartTime_"+nextSlideNo ,startTimeNextInDBFormat);
 			}
 		}
 	}
 }
 
+
 }
-//step ends..
+//step 6 ends here ..
 
 
 function go_nav(direction) {
-	//alert("+++++++++go_nav++++++++++"+direction);
-	//alert("+++++++++go_nav++++contentName++++++"+contentName);
-	//go_nav('b');right
-	//go_nav('f');left
+
 	
 //custom slide changes continues here....
 	
 	if (typeof(localStorage.getItem("currentcustomslideflag"))!='undefined' &&   localStorage.getItem("currentcustomslideflag") =='true'){
 
-			
 				var custcomslideid=parseInt(localStorage.getItem("currentcontentcustomslideId"));
 			
-				
 				var page_id =  custcomslideid;
 		}else{
 			
@@ -252,7 +237,7 @@ function go_nav(direction) {
 	//toCaptureTime(page_id);
 	console.log("swipeleft"+localStorage.getItem("currentslide"));
 	localStorage.setItem("previousslide",localStorage.getItem("currentslide"));
-	//step 7 ends here
+	//step 7 ends here 
 //localStorage.setItem(contentName+"_slideNo_"+currentSlideNo ,n);
 var flag=0;
 if(direction == 'b') {
@@ -266,28 +251,18 @@ if(direction == 'b') {
 		window.location = "js-call:" + "1" + ":" + encodeURIComponent(JSON.stringify({query:'NODATA', type:'brandNavigation', callback:'checkLastPgFn'}));
 
 
-	}
+	}else{
+	if(page_id == 1){
+	localStorage.setItem("gotoNextPrevBrand" ,2);//if one than next if 2 than prev
+	window.location = "js-call:" + "1" + ":" + encodeURIComponent(JSON.stringify({query:'NODATA', type:'brandNavigation', callback:'checkLastPgFn'}));
+
+
+}else{
+	localStorage.setItem("gotoNextPrevBrand" ,0);//if one than next if 2 than prev
+}
+}
 	
 //custom slide changes ends here....
-
-	else{
-	if(page_id >= 0){
-		page_id = page_id - 1;
-		//alert(page_id);
-		//console.log(page_id);
-		if(page_id == 0){
-            flag=2;
-        }
-	}
-	 if(flag == 2){
-        localStorage.setItem("gotoNextPrevBrand" ,2);//if one than next if 2 than prev
-        //flag == 0;
-		window.location = "js-call:" + "1" + ":" + encodeURIComponent(JSON.stringify({query:'NODATA', type:'brandNavigation', callback:'checkLastPgFn'}));
-    }else{
-        localStorage.setItem("gotoNextPrevBrand" ,0);
-    }
-
-	}
 }else {
 	
 //custom slide changes continues here....
@@ -300,28 +275,19 @@ if(direction == 'b') {
 	}
 	
 //custom slide changes ends here....
+else{
+	if(page_id == 1){
+	 localStorage.setItem("gotoNextPrevBrand" ,1);//if one than next if 2 than prev
+	 window.location = "js-call:" + "1" + ":" + encodeURIComponent(JSON.stringify({query:'NODATA', type:'brandNavigation', callback:'checkLastPgFn'}));
+}else{
 
-	else{
-	if(page_id <= 9){
-		page_id = page_id + 1;
-		//alert(page_id);
-		if(page_id == 10){
-            flag=1;
-        }
+	localStorage.setItem("gotoNextPrevBrand" ,0);//if one than next if 2 than prev
+}
 	}
-	    if(flag == 1){
-        localStorage.setItem("gotoNextPrevBrand" ,1);//if one than next if 2 than prev
-         flag == 0;
-		 window.location = "js-call:" + "1" + ":" + encodeURIComponent(JSON.stringify({query:'NODATA', type:'brandNavigation', callback:'checkLastPgFn'}));
-    }else{
-        localStorage.setItem("gotoNextPrevBrand" ,0);
-    }
-
 }
-}
-
 
 //step 8:
+
 currentContentNSlide = currentContentId+"_"+contentName+"_"+page_id;
 //step 8 ends here
 localStorage.setItem("current",currentContentNSlide);
@@ -364,10 +330,7 @@ var pg_content = set_pg_content(page_id);
 }
 
 function set_pg_content(pg_id){
-//step 6:-
-//console.log("++++++++pg_id++++"+pg_id+"+++++++currentslide++++++"+localStorage.getItem("currentslide")+"++++++previousslide++++++"+localStorage.getItem("previousslide"));
-		 //check previous slide id end time capture...@bramha..
-		 //check previous slide id end time capture...@bramha..
+//alert("++++++++++set_pg_content++++++++++"+pg_id);
 	//step 9:
 	if (typeof(localStorage.getItem("previousslide"))!='undefined'){
 		//to checked previous slide has god end time...
@@ -376,10 +339,7 @@ function set_pg_content(pg_id){
 		
 	}
 	toCaptureTime(pg_id);
-
-
 	//step 9 ends here..
-//alert("++++++++++set_pg_content++++++++++"+pg_id);
 $(".reference").removeClass("active");
 currentSlide();
 var selectedContentPath='';
@@ -387,30 +347,7 @@ switch(pg_id){
 	case 1:
 	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
 	break;
-	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_pop1" onclick="s2_pop1()"></div><div class="s2_c1ose1" onclick="s2_close1()"></div>';
-	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png"/></div><div class="s3_2"><img src="slide3/s3_2.png"/></div><div class="s3_3"><img src="slide3/s3_3.png"/></div><div class="s3_pop1" onclick="s3_pop1()"></div><div class="s3_c1ose1" onclick="s3_close1()"></div>';
-	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s4_1"><img src="slide4/s4_1.png"/></div><div class="s4_2"><img src="slide4/s4_2.png"/></div><div class="s4_3"><img src="slide4/s4_3.png"/></div><div class="s4_pop1" onclick="s4_pop1()"></div><div class="s4_c1ose1" onclick="s4_close1()"></div>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s5_1"><img src="slide5/s5_1.png"/></div><div class="s5_2"><img src="slide5/s5_2.png"/></div><div class="s5_3"><img src="slide5/s5_3.png"/></div><div class="s5_pop1" onclick="s5_pop1()"></div><div class="s5_c1ose1" onclick="s5_close1()"></div>';
-	break;
-	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="s6_1"><img src="slide6/s6_1.png"/></div><div class="s6_2"><img src="slide6/s6_2.png"/></div><div class="s6_3"><img src="slide6/s6_3.png"/></div><div class="s6_pop1" onclick="s6_pop1()"></div><div class="s6_c1ose1" onclick="s6_close1()"></div>';
-	break;
-	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide7/slide7.css" media="screen"/><div class="s7_1"><img src="slide7/s7_1.png"/></div><div class="s7_2"><img src="slide7/s7_2.png"/></div><div class="s7_3"><img src="slide7/s7_3.png"/></div><div class="s7_pop1" onclick="s7_pop1()"></div><div class="s7_c1ose1" onclick="s7_close1()"></div>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide8/slide8.css" media="screen"/><div class="s8_1"><img src="slide8/s8_1.png"/></div><div class="s8_2"><img src="slide8/s8_2.png"/></div><div class="s8_pop1" onclick="s8_pop1()"></div><div class="s8_c1ose1" onclick="s8_close1()"></div>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide9/slide9.css" media="screen"/><div class="s9_1"><img src="slide9/s9_1.png"/></div><div class="s9_2"><img src="slide9/s9_2.png"/></div><div class="s9_3"><img src="slide9/s9_3.png"/></div><div class="s9_pop1" onclick="s9_pop1()"></div><div class="s9_c1ose1" onclick="s9_close1()"></div>';
-	break;
+
 }
 
 return content;
@@ -424,7 +361,6 @@ function showDiv2() {
    document.getElementById('welcomeDiv2').style.display = "block";
 }
 
-
 function open_page(url,page_id){
 	 // alert(page_id);
 	//step 10:
@@ -433,7 +369,6 @@ function open_page(url,page_id){
 		var slideid=localStorage.getItem("currentslide");
 		toCaptureTime(slideid);	
 	}
-
 	// toCaptureTime(page_id);
 	 localStorage.setItem("currentslide",page_id);
 	 currentContentNSlide = currentContentId+"_"+contentName+"_"+page_id;
@@ -472,18 +407,19 @@ function open_page(url,page_id){
 	  checkClickThrough();
 	}
 
-function checkClickThrough(){
+	function checkClickThrough(){
 	var currentslide=localStorage.getItem("currentslide");
 	//alert(currentslide);
 	document.getElementById("click_through").innerHTML='';
 
-	if(currentslide == 1) {
-		document.getElementById("click_through").innerHTML='';
+	if(currentslide == 1){
+	document.getElementById("click_through").innerHTML='';
+		}
 	}
-}
 
-	function checkBtns(refNum) {
-		switch(refNum) {
+
+	function checkBtns(refNum){
+		switch(refNum){
 			case 1:
 			open_page('',1);
             break;
@@ -536,17 +472,6 @@ function currentTimeInDatabaseFormat(){//to get current time in dd-mm-yyyy hh:mm
 	return duration;
 }
 
-$(document).ready(function(){
-	$('body').on('click','.touchbtn',function(){
-		$('.right_arrow').trigger( "click" );
-	})
-
-	$(document).on('click','.btnshow',function(){
-//alert('hi')
-		$('.touchbtn').css("display","block");
-	})
-})
-
 /*--------------------- animation javascript -----------------------*/
 
 function s1_pop1() {
@@ -557,44 +482,4 @@ function s1_pop1() {
 function s1_close1() {
 	$('.s1_3').css("display","none");
 	$('.s1_c1ose1').css("display","none");
-}
-
-function s2_pop1() {
-	$('.s2_3').css("display","block");
-	$('.s2_c1ose1').css("display","block");
-}
-
-function s2_close1() {
-	$('.s2_3').css("display","none");
-	$('.s2_c1ose1').css("display","none");
-}
-
-function s3_pop1() {
-	$('.s3_3').css("display","block");
-	$('.s3_c1ose1').css("display","block");
-}
-
-function s3_close1() {
-	$('.s3_3').css("display","none");
-	$('.s3_c1ose1').css("display","none");
-}
-
-function s4_pop1() {
-	$('.s4_3').css("display","block");
-	$('.s4_c1ose1').css("display","block");
-}
-
-function s4_close1() {
-	$('.s4_3').css("display","none");
-	$('.s4_c1ose1').css("display","none");
-}
-
-function s5_pop1() {
-	$('.s5_3').css("display","block");
-	$('.s5_c1ose1').css("display","block");
-}
-
-function s5_close1() {
-	$('.s5_3').css("display","none");
-	$('.s5_c1ose1').css("display","none");
 }

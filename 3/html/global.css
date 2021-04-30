@@ -241,7 +241,7 @@ html[xmlns] .clearfix {
 
 .home {
 	position:absolute;
-	right:1px;
+	left:0px;
 	bottom:0px;
 	width:80px;
 	height:80px;

@@ -345,7 +345,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_3"><img src="slide1/s1_3.png"/></div><div class="s1_4"><img src="slide1/s1_4.png"/></div><div class="s1_5"><img src="slide1/s1_5.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
 	break;
 
 }
@@ -475,11 +475,11 @@ function currentTimeInDatabaseFormat(){//to get current time in dd-mm-yyyy hh:mm
 /*--------------------- animation javascript -----------------------*/
 
 function s1_pop1() {
-	$('.s1_5').css("display","block");
+	$('.s1_4').css("display","block");
 	$('.s1_c1ose1').css("display","block");
 }
 
 function s1_close1() {
-	$('.s1_5').css("display","none");
+	$('.s1_4').css("display","none");
 	$('.s1_c1ose1').css("display","none");
 }

@@ -12,45 +12,52 @@
 
 .s1_2 {
 	position: absolute;
-  left: 50px;
-  top: 39px;
-  width: 736px;
-  height: 247px;
-	animation: fadeInDown 0.5s;
-	animation-delay: 0.0s;
+	width: 567px;
+	height: 467px;
+	left: 453px;
+	top: 130px;
+	animation: fadeInRight 1s;
+	animation-delay: 0.5s;
 	animation-fill-mode: both;
 	z-index: 2;
 }
 
 .s1_3 {
 	position: absolute;
-  left: 80px;
-  top: 313px;
-  width: 375px;
-  height: 360px;
-	animation: fadeInLeft 0.5s;
-	animation-delay: 0.5s;
+	width: 732px;
+	height: 74px;
+	left: 255px;
+	top: 630px;
+/* 	animation: fadeInRight 1s;
+	animation-delay: 0.5s; */
 	animation-fill-mode: both;
-	z-index: 3;
+	z-index: 2;
 }
 
 .s1_4 {
 	position: absolute;
-  left: 581px;
-  top: 309px;
-  width: 357px;
-  height: 315px;
-	animation: fadeInRight 0.5s;
-	animation-delay: 0.5s;
-	animation-fill-mode: both;
-	z-index: 3;
+	width: 974px;
+	height: 94px;
+	left: 32px;
+	bottom: 58px;
+	display: none;
+	z-index: 4;
+}
+
+.s1_5 {
+	position: absolute;
+	width: 112px;
+	height: 74px;
+	left: 872px;
+	top: 630px;
+	z-index: 2;
 }
 
 .s1_pop1 {
 	position: absolute;
 	height: 80px;
 	width: 80px;
-	right: 32px;
+	right: 35px;
 	bottom: 0px;
 	z-index: 3;
 }
@@ -59,7 +66,7 @@
 	position: absolute;
 	width: 974px;
 	height: 94px;
-	left: 25px;
+	left: 32px;
 	bottom: 58px;
 	display: none;
 	z-index: 6;
