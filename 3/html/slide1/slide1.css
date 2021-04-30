@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s1_1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s1_2 {
+	position: absolute;
+  left: 71px;
+  top: 66px;
+  width: 401px;
+  height: 636px;
+	animation: bounceInUp 1s;
+	animation-delay: 0.2s;
+	animation-fill-mode: both;
+	z-index: 2;
+}
+
+.s1_3 {
+	position: absolute;
+  left: 582px;
+  top: 291px;
+  width: 300px;
+  height: 186px;
+	animation: fadeInRight 1s;
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
