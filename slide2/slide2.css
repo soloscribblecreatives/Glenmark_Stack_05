@@ -1,0 +1,87 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.s2_1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+.s2_2 {
+	position: absolute;
+  left: 73px;
+  top: 159px;
+  width: 99px;
+  height: 155px;
+	display: none;
+	z-index: 2;
+}
+
+.s2_3 {
+	position: absolute;
+  left: 74px;
+  top: 44px;
+  width: 876px;
+  height: 333px;
+	animation: fadeInUp 1s;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+.s2_4 {
+	position: absolute;
+  left: 354px;
+  top: 404px;
+  width: 316px;
+  height: 322px;
+	animation: zoomIn 0.5s;
+	animation-delay: 0.5s;
+	animation-fill-mode: both;
+	display: none;
+	z-index: 3;
+}
+
+.s2_5 {
+	position: absolute;
+  left: 554px;
+  top: 408px;
+  width: 399px;
+  height: 266px;
+	animation: fadeInRight 1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: both;
+	z-index: 3;
+}
+
+
+@-webkit-keyframes revealHorizontal {
+  0% {
+    clip: rect(0px,0px,100px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,900px,100px,0px);
+	opacity: 1;
+  }
+}
+@keyframes revealHorizontal {
+  0% {
+    clip: rect(0px,0px,100px,0px);
+	opacity: 1;
+  }
+  
+  100% {
+    clip: rect(0px,900px,100px,0px);
+	opacity: 1;
+  }
+}
+
+.revealHorizontal {
+  -webkit-animation-name: revealHorizontal;
+  animation-name: revealHorizontal;
+}
