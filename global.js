@@ -330,6 +330,9 @@ switch(pg_id){
     case 3:
 	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1024" height="768" alt=""></div><div class="s3_2"><img src="slide3/s3_2.png" alt=""></div><div class="s3_3"><img src="slide3/s3_3.png" alt=""></div><div class="s3_4"><img src="slide3/s3_4.png" alt=""></div>';
 	break;
+	case 4:
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s4_1"><img src="slide4/s4_1.png" width="1024" height="768" alt=""></div><div class="s4_2"><img src="slide4/s4_2.png" alt=""></div><div class="s4_3"><img src="slide4/s4_3.png" alt=""></div><div class="s4_4"><img src="slide4/s4_4.png" alt=""></div><div class="s4_5"><img src="slide4/s4_5.png" alt=""></div><div class="s4_6"><img src="slide4/s4_6.png" alt=""></div>';
+	break;
 }
 
 return content;
