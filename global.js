@@ -180,7 +180,7 @@ else{
 	
  } 
  
-	if(nextSlideNo <= 4){//number 3 is number of total slides present
+	if(nextSlideNo <= 5){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -258,10 +258,10 @@ if(direction == 'b') {
 	}
 	
 		else{
-		if(page_id <= 4){
+		if(page_id <= 5){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 5){
+		if(page_id == 6){
             flag=1;
         }
 	}	
@@ -327,11 +327,14 @@ switch(pg_id){
 	case 2:
 	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1024" height="768" alt=""></div><div class="s2_2"><img src="slide2/s2_2.png"></div><div class="s2_3"><img src="slide2/s2_3.png"></div><div class="s2_4"><img src="slide2/s2_4.png"></div><div class="s2_5"><img src="slide2/s2_4.png"></div><div class="s2_6"><img src="slide2/s2_4.png"></div><div class="s2_7"><img src="slide2/s2_5.png"></div><div class="s2_8"><img src="slide2/s2_6.png"></div><div class="s2_9"><img src="slide2/s2_7.png"></div><audio id="correct"><source src="slide2/Correct.mp3" type="audio/mpeg"></audio><audio id="wrong"><source src="slide2/Wrong.mp3" type="audio/mpeg"></audio>';
 	break;
-    case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1024" height="768" alt=""></div><div class="s3_2"><img src="slide3/s3_2.png" alt=""></div><div class="s3_3"><img src="slide3/s3_3.png" alt=""></div><div class="s3_4"><img src="slide3/s3_4.png" alt=""></div>';
+	case 3:
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1024" height="768" alt=""></div>';
 	break;
-	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s4_1"><img src="slide4/s4_1.png" width="1024" height="768" alt=""></div><div class="s4_2"><img src="slide4/s4_2.png" alt=""></div><div class="s4_3"><img src="slide4/s4_3.png" alt=""></div><div class="s4_4"><img src="slide4/s4_4.png" alt=""></div><div class="s4_5"><img src="slide4/s4_5.png" alt=""></div><div class="s4_6"><img src="slide4/s4_6.png" alt=""></div>';
+    case 4:
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s3_1"><img src="slide4/s3_1.png" width="1024" height="768" alt=""></div><div class="s3_2"><img src="slide4/s3_2.png" alt=""></div><div class="s3_3"><img src="slide4/s3_3.png" alt=""></div><div class="s3_4"><img src="slide4/s3_4.png" alt=""></div>';
+	break;
+	case 5:
+	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s4_1"><img src="slide5/s4_1.png" width="1024" height="768" alt=""></div><div class="s4_2"><img src="slide5/s4_2.png" alt=""></div><div class="s4_3"><img src="slide5/s4_3.png" alt=""></div><div class="s4_4"><img src="slide5/s4_4.png" alt=""></div><div class="s4_5"><img src="slide5/s4_5.png" alt=""></div><div class="s4_6"><img src="slide5/s4_6.png" alt=""></div>';
 	break;
 }
 
@@ -419,7 +422,7 @@ function open_page2(url,page_id,count){
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Mr. Rahul Dravid"/><div class="control_indicator"id="radio03" onclick="option3()"></div></label>\
 			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="Mr. Virender Sehwag"/><div class="control_indicator"id="radio04" onclick="option4()"></div></label>\
 			</div>\
-				<div class="slide01_next animated infinite pulse" onclick="checkBtns(3),open_page("4")"></div><div class="submit_button" onclick="savedata(1,1,2);endTime1(2);hidesubmitonclick();"></div></div></div>';  
+			<div class="slide01_next animated infinite pulse"></div><div class="submit_button" onclick="savedata(1,1,2);endTime1(2);hidesubmitonclick();checkBtns(2);"></div></div></div>';  
 		$('#slide01_question01_choices01').delay(10).fadeIn();
 
 		$(document).on("click touchstart", "#slide01_question01_choices01 input[name]", function(){

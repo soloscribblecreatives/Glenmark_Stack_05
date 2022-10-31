@@ -1,0 +1,74 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.s4_1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+    animation: none 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+	z-index: 1;
+}
+
+.s4_2 {
+	position: absolute;
+  left: 285px;
+  top: 43px;
+  width: 454px;
+  height: 252px;
+    animation: zoomIn 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+	z-index: 4;
+}
+
+.s4_3 {
+	position: absolute;
+  left: 97px;
+  top: 318px;
+  width: 830px;
+  height: 55px;
+    animation: fadeInUp 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+	z-index: 6;
+}
+
+.s4_4 {
+	position: absolute;
+  left: 121px;
+  top: 430px;
+  width: 226px;
+  height: 151px;
+    animation: zoomIn 1s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+	z-index: 6;
+}
+
+.s4_5 {
+	position: absolute;
+  left: 430px;
+  top: 430px;
+  width: 194px;
+  height: 151px;
+    animation: zoomIn 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: both;
+	z-index: 6;
+}
+
+.s4_6 {
+	position: absolute;
+  left: 686px;
+  top: 430px;
+  width: 216px;
+  height: 147px;
+    animation: zoomIn 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+	z-index: 6;
+}
