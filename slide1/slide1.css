@@ -49,3 +49,44 @@
 	z-index: 2;
 	display: none;
 }
+
+
+.s1_close1 {
+  position: absolute;
+  left: 55px;
+  top: 141px;
+  width: 220px;
+  height: 240px;
+  display: none;
+  z-index: 9999;
+}
+
+.s1_close2 {
+  position: absolute;
+  left: 286px;
+  top: 141px;
+  width: 220px;
+  height: 240px;
+  display: none;
+  z-index: 9999;
+}
+
+.s1_close3 {
+  position: absolute;
+  left: 517px;
+  top: 141px;
+  width: 220px;
+  height: 240px;
+  display: none;
+  z-index: 9999;
+}
+
+.s1_close4 {
+  position: absolute;
+  left: 748px;
+  top: 141px;
+  width: 220px;
+  height: 240px;
+  display: none;
+  z-index: 9999;
+}
