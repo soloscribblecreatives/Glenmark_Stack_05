@@ -1,50 +1,131 @@
 * {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-.s3_1 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	z-index: 1;
+.s4_1 {
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
 }
 
-.s3_2 {
-	position: absolute;
-  left: 385px;
-  top: 134px;
-  width: 287px;
-  height: 92px;
-    animation: fadeInDown 1s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	z-index: 4;
+.s4_2 {
+  position: absolute;
+  left: 395px;
+  top: 22px;
+  width: 328px;
+  height: 365px;
+  animation: zoomIn 0.5s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 3;
 }
 
-.s3_3 {
-	position: absolute;
-  left: 267px;
-  top: 232px;
-  width: 464px;
-  height: 196px;
-    animation: zoomIn 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	z-index: 6;
+.s4_3 {
+  position: absolute;
+  left: 464px;
+  top: 144px;
+  width: 115px;
+  height: 101px;
+  animation: zoomIn 0.5s;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+  z-index: 5;
 }
 
-.s3_4 {
-	position: absolute;
-  left: 502px;
-  top: 453px;
-  width: 261px;
-  height: 85px;
-    animation: fadeInUp 1s;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-	z-index: 6;
+.s4_4 {
+  position: absolute;
+  left: 512px;
+  top: 19px;
+  width: 69px;
+  height: 68px;
+  animation: bounceIn 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+.s4_5 {
+  position: absolute;
+  left: 403px;
+  top: 94px;
+  width: 69px;
+  height: 69px;
+  animation: bounceIn 1s;
+  animation-delay: 1.3s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+.s4_6 {
+  position: absolute;
+  left: 594px;
+  top: 193px;
+  width: 69px;
+  height: 69px;
+  animation: bounceIn 1s;
+  animation-delay: 1.6s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+.s4_7 {
+  position: absolute;
+  left: 450px;
+  top: 282px;
+  width: 68px;
+  height: 68px;
+  animation: bounceIn 1s;
+  animation-delay: 1.9s;
+  animation-fill-mode: both;
+  z-index: 5;
+}
+
+.s4_8 {
+  position: absolute;
+  left: 362px;
+  top: 408px;
+  width: 284px;
+  height: 191px;
+  animation: fadeInRight 1s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 6;
+}
+
+
+@-webkit-keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.stampIn {
+  -webkit-animation-name: stampIn;
+  animation-name: stampIn;
 }

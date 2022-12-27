@@ -1,6 +1,6 @@
 
 var arrSurveyQuestions = {
-   2: "Which cricketer is ACE in Cricket?"
+   1: "From these patients, who all would you prescribe Telma?"
 };
 /*Code by android developers start here*/
 var startLoc = null;
@@ -92,7 +92,7 @@ function touchHandler(e) {
 
 	currentSlide();
 
-		$("#main_content").swipe({
+/* 		$("#main_content").swipe({
 	   swipeLeft:function(event, direction, distance, duration, fingerCount) {
 		//step 4:-
 		console.log("swipeleft"+localStorage.getItem("currentslide"));
@@ -132,7 +132,7 @@ function touchHandler(e) {
 
         //Default is 75px, set to 0 for demo so any distance triggers swipe
          threshold:0
-	});
+	}); */
 
 
 
@@ -180,7 +180,7 @@ else{
 	
  } 
  
-	if(nextSlideNo <= 5){//number 3 is number of total slides present
+	if(nextSlideNo <= 4){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -258,10 +258,10 @@ if(direction == 'b') {
 	}
 	
 		else{
-		if(page_id <= 5){
+			if(page_id <= 4){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 6){
+		if(page_id == 5){
             flag=1;
         }
 	}	
@@ -322,19 +322,16 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""></div><div class="s1_2"><img src="slide1/s1_2.png" alt=""></div><div class="s1_3"><img src="slide1/s1_3.png" alt=""></div><div class="s1_4"><img src="slide1/s1_4.png" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png" width="1024" height="768" alt=""></div><div class="bullet1"><img src="slide1/s1_2.png"></div><div class="bullet2"><img src="slide1/s1_2.png"></div><div class="bullet3"><img src="slide1/s1_2.png"></div><div class="bullet4"><img src="slide1/s1_2.png"></div>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png" width="1024" height="768" alt=""></div><div class="s2_2"><img src="slide2/s2_2.png"></div><div class="s2_3"><img src="slide2/s2_3.png"></div><div class="s2_4"><img src="slide2/s2_4.png"></div><div class="s2_5"><img src="slide2/s2_4.png"></div><div class="s2_6"><img src="slide2/s2_4.png"></div><div class="s2_7"><img src="slide2/s2_5.png"></div><div class="s2_8"><img src="slide2/s2_6.png"></div><div class="s2_9"><img src="slide2/s2_7.png"></div><audio id="correct"><source src="slide2/Correct.mp3" type="audio/mpeg"></audio><audio id="wrong"><source src="slide2/Wrong.mp3" type="audio/mpeg"></audio>';
+	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s2_1"><img src="slide2/s2_1.png"/></div><div class="s2_2"><img src="slide2/s2_2.png"/></div><div class="s2_3"><img src="slide2/s2_3.png"/></div><div class="s2_4"><img src="slide2/s2_4.png"/></div><div class="s2_5"><img src="slide2/s2_5.png"/></div><div class="s2_6"><img src="slide2/s2_6.png"/></div><div class="s2_7"><img src="slide2/s2_7.png"/></div><div class="s2_8"><img src="slide2/s2_8.png"/></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s3_1"><img src="slide3/s3_1.png"/></div><div class="s3_2"><img src="slide3/s3_2.png"/></div><div class="s3_3"><img src="slide3/s3_3.png"/></div><div class="s3_4"><img src="slide3/s3_4.png"/></div><div class="s3_5"><img src="slide3/s3_5.png"/></div><div class="s3_6"><img src="slide3/s3_6.png"/></div><div class="s3_7"><img src="slide3/s3_7.png"/></div>';
 	break;
     case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s3_1"><img src="slide4/s3_1.png" width="1024" height="768" alt=""></div><div class="s3_2"><img src="slide4/s3_2.png" alt=""></div><div class="s3_3"><img src="slide4/s3_3.png" alt=""></div><div class="s3_4"><img src="slide4/s3_4.png" alt=""></div>';
-	break;
-	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s4_1"><img src="slide5/s4_1.png" width="1024" height="768" alt=""></div><div class="s4_2"><img src="slide5/s4_2.png" alt=""></div><div class="s4_3"><img src="slide5/s4_3.png" alt=""></div><div class="s4_4"><img src="slide5/s4_4.png" alt=""></div><div class="s4_5"><img src="slide5/s4_5.png" alt=""></div><div class="s4_6"><img src="slide5/s4_6.png" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s4_1"><img src="slide4/s4_1.png"/></div><div class="s4_2"><img src="slide4/s4_2.png"/></div><div class="s4_3"><img src="slide4/s4_3.png"/></div><div class="s4_4"><img src="slide4/s4_4.png"/></div><div class="s4_5"><img src="slide4/s4_5.png"/></div><div class="s4_6"><img src="slide4/s4_6.png"/></div><div class="s4_7"><img src="slide4/s4_7.png"/></div><div class="s4_8"><img src="slide4/s4_8.png"/></div><div class="s4_pop1" onclick="s4_pop1()"></div><div class="s4_c1ose1" onclick="s4_close1()"></div>';
 	break;
 }
 
@@ -352,13 +349,17 @@ function showDiv2() {
 
 function open_page(url,page_id){
 	
-	count3=2;
+	
+	    count3=2;
     count4=0;
 	if (typeof(localStorage.getItem("currentslide"))!='undefined'){
 		//to checked previous slide has god end time...
 		var slideid=localStorage.getItem("currentslide");
-		toCaptureTime(slideid);	
+		toCaptureTime(slideid);
+		
 	}
+
+	
 
 	// toCaptureTime(page_id);
 	 localStorage.setItem("currentslide",page_id);
@@ -414,20 +415,21 @@ function open_page2(url,page_id,count){
 	//alert(currentslide);
 	document.getElementById("click_through").innerHTML='';
 
-		if(currentslide == 2){
-		document.getElementById("click_through").innerHTML='<div class="slide02_inline_wraper" id="buttons"><div class="slide01_home_btn_mask" onclick="checkBtns(3)"></div>\
+		if(currentslide == 1){
+		document.getElementById("click_through").innerHTML='<div class="slide02_inline_wraper" id="buttons"><div class="slide01_home_btn_mask" onclick="checkBtns(5)"></div>\
 			<div id="slide01_question01_choices01" class="control-group">\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Mr. Sachin Tendulkar"/><div class="control_indicator"id="radio01" onclick="option1()"></div></label>\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Mr. Saurabh Ganguly"/><div class="control_indicator"id="radio02" onclick="option2()"></div></label>\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Mr. Rahul Dravid"/><div class="control_indicator"id="radio03" onclick="option3()"></div></label>\
-			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="Mr. Virender Sehwag"/><div class="control_indicator"id="radio04" onclick="option4()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_01" name="checkB01" value="Mr Agarwal - Executive"/><div class="control_indicator"id="radio01" onclick="select1()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_02" name="checkB01" value="Mrs Chautala - Housewife"/><div class="control_indicator"id="radio02" onclick="select2()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_03" name="checkB01" value="Mr Yadav - Rickshaw"/><div class="control_indicator"id="radio03" onclick="select3()"></div></label>\
+			<label class="control control_radio"><div class="lbl_pos"></div><input type="radio" id="slide01_radio01_04" name="checkB01" value="Mrs Bendre - Socialite"/><div class="control_indicator"id="radio04" onclick="select4()"></div></label>\
 			</div>\
-			<div class="slide01_next animated infinite pulse"></div><div class="submit_button" onclick="savedata(1,1,2);endTime1(2);hidesubmitonclick();checkBtns(2);"></div></div></div>';  
+			<div class="submit_button" onclick="savedata(1,1,1);endTime1(1);hidesubmitonclick();checkBtns(1)"></div></div></div>';  
 		$('#slide01_question01_choices01').delay(10).fadeIn();
 
 		$(document).on("click touchstart", "#slide01_question01_choices01 input[name]", function(){
 			if ($("input[name='checkB01']:checked").val()){
-				var test = $(this).val();	
+				var test = $(this).val();
+				$(".submit_button,.slide01_next").fadeIn();		
 			}			
 		});
 
@@ -438,6 +440,61 @@ function open_page2(url,page_id,count){
 		$(document).on("click", ".slide01_submit_popup_close_btn_mask", function(){
 			$('.slide01_submit_popup_content').fadeOut();
 		});
+	}
+	
+	if(currentslide == 2){
+		/* document.getElementById("click_through").innerHTML='<div class="button_page02" onclick="checkBtns(2)"></div>' */
+		$("#main_content").swipe({
+	   swipeLeft:function(event, direction, distance, duration, fingerCount) {
+		//step 4:-
+		console.log("swipeleft"+localStorage.getItem("currentslide"));
+		localStorage.setItem("previousslide",localStorage.getItem("currentslide"));
+		//step 4 ends here
+		//alert("swipeleft");
+		//myconsole("swipeleft");
+		var page_id =  parseInt($("#wrapper").attr("rel"));
+		var last_page_id = $(".slides").length;
+		var slide_jumper_open = $(".reference").hasClass("active");
+		if(page_id == last_page_id+1)	{
+			return
+		} else{
+			go_nav('f');
+		}
+	  },
+
+	  swipeRight:function(event, direction, distance, duration, fingerCount) {
+		//step 5:-
+		console.log("swiperight"+localStorage.getItem("currentslide"));
+		localStorage.setItem("previousslide",localStorage.getItem("currentslide"));
+		//step 5 ends here 
+			//alert("swiperight");
+		//myconsole("swiperight");
+		var page_id =  parseInt($("#wrapper").attr("rel"));
+		var slide_jumper_open = $(".reference").hasClass("active");
+
+		if(page_id == 2){
+			//console.log("First Slide");
+			//myconsole("First Slide");
+			return
+		} else {
+			go_nav('b');
+		}
+
+	  } ,
+
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+         threshold:0
+	});
+	
+	}
+	
+	if(currentslide == 3){
+		/* document.getElementById("click_through").innerHTML='<div class="button_page03" onclick="checkBtns(3)"></div>' */  
+	}
+	
+	
+	if(currentslide == 4){
+		document.getElementById("click_through").innerHTML='<div class="button_page04" onclick="checkBtns(4)"></div>'
 	}
 	
 }
@@ -452,15 +509,11 @@ function checkBtns(refNum){
 		open_page('',3);
 		break;
 		case 3:
-		open_page2('',3,3);
+		open_page('',4);
 		break;
 		case 4:
-		open_page2('',4,2);
+		open_page('',1);
 		break;
-		case 5:
-		open_page('',2);
-		break;
-
 		}
 	}
 	
@@ -525,7 +578,7 @@ $(document).ready(function(){
 function savedata(answer,type,questionNumber){
 	
 	
- 	if(questionNumber == 2){
+ 	if(questionNumber == 1){
 		var selectedAnswer1 = document.querySelector('input[name = "checkB01"]:checked').value;
 		var varanswer = selectedAnswer1;
 	}
@@ -554,50 +607,30 @@ function endTime1(currentSlideNo){
 function hidesubmitonclick()
 {
 	$('.submit_button').css("display","none");
-	$('.s2_7').css("display","block");
+	$('.control_indicator').css("display","none");
+	
+	setTimeout(function () {
+        $('.button_page02').css("display","block");
+    }, 2500);
 }
 
-/*--------------------- animation javascript -----------------------*/
 
-
-function option1() {
-	document.getElementById("correct").play();
-	$('.s2_3').css("display","block");
-	$('.s2_4').css("display","none");
-	$('.s2_5').css("display","none");
-	$('.s2_6').css("display","none");
-	$('.s2_8').addClass("s2_8_out");
-	$('.s2_9').css("display","block");
-	$('#radio01').css("display","none");
-	$('#radio02').css("display","none");
-	$('#radio03').css("display","none");
-	$('#radio04').css("display","none");
-	$('.submit_button').css("display","block");	
+function select1()
+{
+	$('.bullet1').css("display","block");
 }
 
-function option2() {
-	document.getElementById("wrong").play();
-	$('.s2_3').css("display","none");
-	$('.s2_4').css("display","block");
-	$('.s2_5').css("display","none");
-	$('.s2_6').css("display","none");
-	$('.submit_button').css("display","none");
+function select2()
+{
+	$('.bullet2').css("display","block");
 }
 
-function option3() {
-	document.getElementById("wrong").play();
-	$('.s2_3').css("display","none");
-	$('.s2_4').css("display","none");
-	$('.s2_5').css("display","block");
-	$('.s2_6').css("display","none");
-	$('.submit_button').css("display","none");
+function select3()
+{
+	$('.bullet3').css("display","block");
 }
 
-function option4() {
-	document.getElementById("wrong").play();
-	$('.s2_3').css("display","none");
-	$('.s2_4').css("display","none");
-	$('.s2_5').css("display","none");
-	$('.s2_6').css("display","block");
-	$('.submit_button').css("display","none");
+function select4()
+{
+	$('.bullet4').css("display","block");
 }

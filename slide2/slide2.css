@@ -1,192 +1,132 @@
 * {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .s2_1 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	z-index: 1;
+  position: absolute;
+  width: 1024px;
+  height: 768px;
+  z-index: 1;
 }
 
 .s2_2 {
-	position: absolute;
-  left: 215px;
-  top: 541px;
-  width: 592px;
-  height: 94px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	z-index: 6;
+  position: absolute;
+  left: 0px;
+  top: 123px;
+  width: 258px;
+  height: 315px;
+  animation: flipInY 0.5s;
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+  z-index: 3;
 }
 
 .s2_3 {
-	position: absolute;
-  left: 159px;
-  top: 525px;
-  width: 340px;
-  height: 50px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	display:none;
-	z-index: 4;
+  position: absolute;
+  left: 252px;
+  top: 123px;
+  width: 262px;
+  height: 282px;
+  animation: flipInY 0.5s;
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+  z-index: 2;
 }
 
 .s2_4 {
-	position: absolute;
-  left: 524px;
-  top: 525px;
-  width: 340px;
-  height: 50px;
-    animation: none 1s;
-    animation-delay: 0.2s;
-    animation-fill-mode: both;
-	display:none;
-	z-index: 4;
+  position: absolute;
+  left: 508px;
+  top: 123px;
+  width: 262px;
+  height: 282px;
+  animation: flipInY 0.5s;
+  animation-delay: 0.6s;
+  animation-fill-mode: both;
+  z-index: 2;
 }
 
 .s2_5 {
-	position: absolute;
-  left: 157px;
-  top: 596px;
-  width: 340px;
-  height: 50px;
-    animation: none 1s;
-    animation-delay: 0.2s;
-    animation-fill-mode: both;
-	display:none;
-	z-index: 4;
+  position: absolute;
+  left: 764px;
+  top: 123px;
+  width: 260px;
+  height: 283px;
+  animation: flipInY 0.5s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+  z-index: 2;
 }
 
+
 .s2_6 {
-	position: absolute;
-  left: 524px;
-  top: 596px;
-  width: 340px;
-  height: 50px;
-    animation: none 1s;
-    animation-delay: 0.2s;
-    animation-fill-mode: both;
-	display:none;
-	z-index: 4;
+  position: absolute;
+  left: 0px;
+  top: 399px;
+  width: 1024px;
+  height: 75px;
+  animation: fadeInUp 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 2;
 }
 
 .s2_7 {
-	position: absolute;
-  left: 397px;
-  top: 680px;
-  width: 230px;
-  height: 36px;
-    animation: fadeInLeft 1s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	display: none;
-	z-index: 2;
+  position: absolute;
+  left: 61px;
+  top: 499px;
+  width: 904px;
+  height: 140px;
+  animation: zoomIn 0.7s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  z-index: 2;
 }
 
 .s2_8 {
-	position: absolute;
-  left: 433px;
-  top: 239px;
-  width: 142px;
-  height: 152px;
-    animation: none 1s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	z-index: 2;
-}
-
-.s2_8_out {
-    animation: zoomOut 1s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	z-index: 2;
-}
-
-.s2_9 {
-	position: absolute;
-  left: 313px;
-  top: 21px;
-  width: 318px;
-  height: 343px;
-    animation: zoomIn 1s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	transform-origin: bottom;
-	display: none;
-	z-index: 5;
-}
-
-
-.option1 {
-	position: absolute;
-  left: 66px;
-  top: 476px;
-  width: 426px;
-  height: 46px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	border: 2px solid red;
-	z-index: 10;
-}
-
-.option2 {
-	position: absolute;
-  left: 528px;
-  top: 476px;
-  width: 426px;
-  height: 46px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	border: 2px solid red;
-	z-index: 10;
-}
-
-.option3 {
-	position: absolute;
-  left: 66px;
-  top: 541px;
-  width: 426px;
-  height: 46px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	border: 2px solid red;
-	z-index: 10;
-}
-
-.option4 {
-	position: absolute;
-  left: 528px;
-  top: 541px;
-  width: 426px;
-  height: 46px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	border: 2px solid red;
-	z-index: 10;
-}
-
-#myAudio {
-	position: absolute;
-	display: none;
-	z-index: 20;
-}
-
-.playAudio {
   position: absolute;
-  left: 453px;
-  top: 280px;
-  width: 118px;
-  height: 118px;
-  z-index: 50;
+  left: 489px;
+  top: 664px;
+  width: 46px;
+  height: 45px;
+  animation: none;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+
+@-webkit-keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes stampIn {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		transform-origin: 50% 50%;
+		transform: scale(3);
+		opacity: 0.5;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.stampIn {
+  -webkit-animation-name: stampIn;
+  animation-name: stampIn;
 }

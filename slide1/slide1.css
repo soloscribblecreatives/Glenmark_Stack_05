@@ -7,44 +7,45 @@
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-    animation: none 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
 	z-index: 1;
 }
 
-.s1_2 {
+.bullet1 {
 	position: absolute;
-  left: 0px;
-  top: 171px;
-  width: 1024px;
-  height: 597px;
-    animation: zoomIn 1s;
-    animation-delay: 0s;
-    animation-fill-mode: both;
-	z-index: 4;
+  left: 65px;
+  top: 335px;
+  width: 39px;
+  height: 35px;
+	z-index: 2;
+	display: none;
 }
 
-.s1_3 {
+.bullet2 {
 	position: absolute;
-  left: 282px;
-  top: 64px;
-  width: 502px;
-  height: 104px;
-    animation: fadeInDown 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-	z-index: 6;
+  left: 296px;
+  top: 335px;
+  width: 39px;
+  height: 35px;
+	z-index: 2;
+	display: none;
 }
 
-.s1_4 {
+.bullet3 {
 	position: absolute;
-  left: 271px;
-  top: 322px;
-  width: 421px;
-  height: 202px;
-    animation: zoomIn 1s;
-    animation-delay: 2.5s;
-    animation-fill-mode: both;
-	z-index: 6;
+  left: 524px;
+  top: 335px;
+  width: 39px;
+  height: 35px;
+	z-index: 2;
+	display: none;
+}
+
+.bullet4 {
+	position: absolute;
+  left: 758px;
+  top: 335px;
+  width: 39px;
+  height: 35px;
+	z-index: 2;
+	display: none;
 }

@@ -587,8 +587,7 @@ transform: scale(1);
 
 
 
-
-/*Page Styles CSS*/
+/*Page Styles*/
 
 /* Slide01 Styles*/
 .slide01_home_btn_mask { width: 61px; height: 78px; position: absolute; left: 43px; top: 0px; z-index: 310; }
@@ -597,18 +596,14 @@ transform: scale(1);
 .slide01_next { width: 45px; height: 46px; position: absolute; left: 1217px; top: 343px; z-index: 310; display:none; }
 
 .submit_button {
-  position: absolute;
-  left: 434px;
-  top: 668px;
-  width: 156px;
-  height: 49px;
-  z-index: 50;
-  background: url(slide2/submit_button.png) no-repeat left top;
-  display: none;
-  cursor: pointer;
-  animation: pulse 1s infinite;
-  animation-delay: 0s;
-  animation-fill-mode: both;
+	position: absolute;
+	background: url(slide1/submit_button.png) no-repeat left top;
+    left: 415px;
+    top: 625px;
+    width: 192px;
+    height: 61px;
+	z-index: 310;
+	display:none; 
 }
 
 .slide01_submit_popup_content { width:1280px; height:726px; background: url('slide01/slide01_popup01.png') no-repeat left top; position:absolute; left:0px ; top:0px; z-index:320; display:none; }
@@ -717,22 +712,7 @@ transform: scale(1);
 .slide06_picnt_clost_btn_mask { width: 76px; height: 76px; position:absolute; left:1145px; top:65px; z-index:310; }
 
 
-
-/*Component Css*/
-
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-h1 {
-  font-family: 'Alegreya Sans', sans-serif;
-  font-weight: 300;
-  margin-top: 0;
-}
+/*Component*/
 .control-group {
   display: inline-block;
   vertical-align: top;
@@ -761,8 +741,8 @@ h1 {
   background-size:55px 55px;
 }
 .control_indicator {
-  width: 350px;
-  height: 60px;
+  width: 130px;
+  height: 230px;
   position: relative;
   top: 2px;
   left: 0;    
@@ -770,6 +750,7 @@ h1 {
   background-size:55px 55px;
   /*z-index:9999;*/
 }
+
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
   /*background: #ccc;*/
@@ -821,8 +802,8 @@ h1 {
 }
 .control input:checked ~ .control_indicator:after {
   /*display: block;*/
-  background: url('active_radio.png') no-repeat left top;
-  background-size:54px 51px;
+  /*background: url('active_radio.png') no-repeat left top;
+  background-size:55px 55px;
   opacity: 1;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
@@ -831,7 +812,7 @@ h1 {
   /*z-index:99999;*/
 }
 .control_checkbox .control_indicator:after {
-  left: 8px;
+ /*  left: 8px;
   top: 4px;
   width: 3px;
   height: 8px;
@@ -844,7 +825,7 @@ h1 {
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 0.5s; 
+  animation-duration: 0.5s; */
   /*z-index:99999;*/
 }
 .control_checkbox input:disabled ~ .control_indicator:after {
@@ -853,8 +834,8 @@ h1 {
 .control_radio .control_indicator:after {
   left: 0px;
   top: 0px;
-  height: 58px;
-  width: 39px;
+  height: 55px;
+  width: 55px;
   border-radius: 70%;
   /*background: #fff;*/
   background: url('disable_radio.png') no-repeat left top;
@@ -919,47 +900,62 @@ h1 {
 
 #radio01 {
     position: absolute;
-	left: 60px;
-    top: 60px;
-	z-index: 20;
+	  left: -35px;
+  top: -315px;
+  width: 219px;
+  height: 237px;
 }
 
 #radio02 {
     position: absolute;
-    left: 430px;
-    top: 48px;
-	z-index: 20;
+	  left: 195px;
+  top: -326px;
+  width: 219px;
+  height: 237px;
 }
 
 #radio03 {
-	position: absolute;
-	left: 60px;
-    top: 110px;
-	z-index: 20;
+    position: absolute;
+	  left: 425px;
+  top: -338px;
+  width: 219px;
+  height: 237px;
 }
 
 #radio04 {
     position: absolute;
-	left: 430px;
-    top: 98px;
-	z-index: 20;
+	  left: 657px;
+  top: -350px;
+  width: 219px;
+  height: 237px;
 }
 
 
 
+.button_page02 {
+  position: absolute;
+  left: 423px;
+  top: 594px;
+  width: 169px;
+  height: 174px;
+  z-index: 999;
+  display: none;
+}
 
+.button_page03 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1024px;
+  height: 768px;
+  z-index: 999;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.button_page04 {
+  position: absolute;
+  left: 900px;
+  top: 611px;
+  width: 124px;
+  height: 157px;
+  z-index: 999;
+}
