@@ -12,86 +12,75 @@
 
 .s4_2 {
   position: absolute;
-  left: 395px;
-  top: 22px;
-  width: 328px;
-  height: 365px;
-  animation: zoomIn 0.5s;
+  left: 231px;
+  top: 34px;
+  width: 575px;
+  height: 298px;
+  animation: zoomIn 1s;
   animation-delay: 0s;
   animation-fill-mode: both;
-  z-index: 3;
+  z-index: 2;
 }
 
 .s4_3 {
   position: absolute;
-  left: 464px;
-  top: 144px;
-  width: 115px;
-  height: 101px;
-  animation: zoomIn 0.5s;
-  animation-delay: 0.3s;
+  left: 231px;
+  top: 321px;
+  width: 551px;
+  height: 162px;
+  animation: fadeInUp 1s;
+  animation-delay: 1s;
   animation-fill-mode: both;
-  z-index: 5;
+  z-index: 2;
 }
 
 .s4_4 {
   position: absolute;
-  left: 512px;
-  top: 19px;
-  width: 69px;
-  height: 68px;
-  animation: bounceIn 1s;
-  animation-delay: 1s;
+  left: 101px;
+  top: 502px;
+  width: 401px;
+  height: 214px;
+  animation: fadeInLeft 1s;
+  animation-delay: 2s;
   animation-fill-mode: both;
-  z-index: 5;
+  z-index: 2;
 }
 
 .s4_5 {
   position: absolute;
-  left: 403px;
-  top: 94px;
-  width: 69px;
-  height: 69px;
-  animation: bounceIn 1s;
-  animation-delay: 1.3s;
+  left: 634px;
+  top: 515px;
+  width: 288px;
+  height: 184px;
+  animation: fadeInRight 1s;
+  animation-delay: 2s;
   animation-fill-mode: both;
-  z-index: 5;
+  z-index: 2;
 }
 
 .s4_6 {
-  position: absolute;
-  left: 594px;
-  top: 193px;
-  width: 69px;
-  height: 69px;
-  animation: bounceIn 1s;
-  animation-delay: 1.6s;
-  animation-fill-mode: both;
-  z-index: 5;
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 10;
 }
 
-.s4_7 {
-  position: absolute;
-  left: 450px;
-  top: 282px;
-  width: 68px;
-  height: 68px;
-  animation: bounceIn 1s;
-  animation-delay: 1.9s;
-  animation-fill-mode: both;
-  z-index: 5;
+.s4_pop1 {
+	position: absolute;
+	height: 100px;
+	width: 150px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 15;
 }
 
-.s4_8 {
-  position: absolute;
-  left: 362px;
-  top: 408px;
-  width: 284px;
-  height: 191px;
-  animation: fadeInRight 1s;
-  animation-delay: 2.5s;
-  animation-fill-mode: both;
-  z-index: 6;
+.s4_c1ose1 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 20;
 }
 
 
