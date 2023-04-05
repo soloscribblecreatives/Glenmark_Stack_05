@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 6){//number 3 is number of total slides present
+	if(nextSlideNo <= 14){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 6){
+	if(page_id <= 14){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 7){
+		if(page_id == 15){
             flag=1;
         }
 	}
@@ -385,22 +385,46 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="s1_1"><img src="slide1/s1_1.png"/></div><div class="s1_2"><img src="slide1/s1_2.png"/></div><div class="s1_pop1" onclick="s1_pop1()"></div><div class="s1_c1ose1" onclick="s1_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide1/1.jpg" width="1024" height="768" alt=""></div><div class="homebtn1"></div><div class="homebtn2"></div><div class="homebtn3"></div><div class="homebtn4"></div><div class="homebtn5"></div>';
 	break;
-    case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="s3_1"><img src="slide2/s3_1.png"/></div><div class="s3_2"><img src="slide2/s3_2.png"/></div><div class="s3_3"><img src="slide2/s3_3.png"/></div><div class="s3_4"><img src="slide2/s3_4.png"/></div><div class="s3_5"><img src="slide2/s3_5.png"/></div><div class="s3_6"><img src="slide2/s3_6.png"/></div><div class="s3_7"><img src="slide2/s3_7.png"/></div><div class="s3_pop1" onclick="s3_pop1()"></div><div class="s3_c1ose1" onclick="s3_close1()"></div>';
+	case 2:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide3/slide3.css" media="screen"/><div class="s4_1"><img src="slide3/s4_1.png"/></div><div class="s4_2"><img src="slide3/s4_2.png"/></div><div class="s4_3"><img src="slide3/s4_3.png"/></div><div class="s4_4"><img src="slide3/s4_4.png"/></div><div class="s4_pop1" onclick="s4_pop1()"></div><div class="s4_c1ose1" onclick="s4_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="s5_1"><img src="slide4/s5_1.png"/></div><div class="s5_2"><img src="slide4/s5_2.png"/></div><div class="s5_3_wrap"><div class="s5_3"><img src="slide4/s5_3.png"/></div></div><div class="s5_4"><img src="slide4/s5_4.png"/></div><div class="s5_5"><img src="slide4/s5_5.png"/></div><div class="s5_pop1" onclick="s5_pop1()"></div><div class="s5_c1ose1" onclick="s5_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div><div class="pop1"><img src="slide4/2.jpg" width="1024" height="768"></div><div class="pop_open1" onclick="pop4_open1()"></div><div class="pop_close1" onclick="pop4_close1()"></div><div class="pop2"><img src="slide4/3.jpg" width="1024" height="768"></div><div class="pop_open2" onclick="pop4_open2()"></div><div class="pop_close2" onclick="pop4_close2()"></div>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide5/slide5.css" media="screen"/><div class="s6_1"><img src="slide5/s6_1.png"/></div><div class="s6_2"><img src="slide5/s6_2.png"/></div><div class="s6_3"><img src="slide5/s6_3.png"/></div><div class="s6_4"><img src="slide5/s6_4.png"/></div><div class="s6_pop1" onclick="s6_pop1()"></div><div class="s6_c1ose1" onclick="s6_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide6/slide6.css" media="screen"/><div class="s7_1"><img src="slide6/s7_1.png"/></div><div class="s7_2"><img src="slide6/s7_2.png"/></div><div class="s7_3"><img src="slide6/s7_3.png"/></div><div class="kol_wrap"><div class="kol" onclick="kol();"><img src="slide6/s7_4.png"></div></div><video id="myVideo" width="1024" height="768" src="slide6/s7_6.mp4" controls></video><div class="closekol" onclick="closekol();"><img src="slide6/s7_5.png"></div><div class="s7_pop1" onclick="s7_pop1()"></div><div class="s7_c1ose1" onclick="s7_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 7:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 8:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide8/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 9:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide9/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 10:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide10/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 11:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide11/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 12:
+	content='<link rel="stylesheet" type="text/css" href="slide12/slide12.css" media="screen"/><div class="background"><img src="slide12/1.jpg" width="1024" height="768" alt=""></div><div class="pop1"><img src="slide12/2.jpg" width="1024" height="768"></div><div class="pop_open1" onclick="pop12_open1()"></div><div class="pop_close1" onclick="pop12_close1()"></div><div class="pop2"><img src="slide12/3.jpg" width="1024" height="768"></div><div class="pop_open2" onclick="pop12_open2()"></div><div class="pop_close2" onclick="pop12_close2()"></div>';
+	break;
+	case 13:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide13/1.jpg" width="1024" height="768" alt=""></div>';
+	break;
+	case 14:
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide14/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 }
 
@@ -422,9 +446,10 @@ function open_page(url,page_id){
 	if (typeof(localStorage.getItem("currentslide"))!='undefined'){
 		//to checked previous slide has god end time...
 		var slideid=localStorage.getItem("currentslide");
-		toCaptureTime(slideid);	
+		toCaptureTime(slideid);
+		
 	}
-
+	
 	// toCaptureTime(page_id);
 	 localStorage.setItem("currentslide",page_id);
 	 currentContentNSlide = currentContentId+"_"+contentName+"_"+page_id;
@@ -463,14 +488,14 @@ function open_page(url,page_id){
 	  checkClickThrough();
 	}
 
-function checkClickThrough(){
+	function checkClickThrough(){
 	var currentslide=localStorage.getItem("currentslide");
 	//alert(currentslide);
 	document.getElementById("click_through").innerHTML='';
 
-	if(currentslide == 1) {
-		document.getElementById("click_through").innerHTML='';
-	}
+	if(currentslide == 1){
+	document.getElementById("click_through").innerHTML='';
+		}
     if(currentslide == 2){
 	document.getElementById("click_through").innerHTML='';
 		}
@@ -480,7 +505,7 @@ function checkClickThrough(){
 	function checkBtns(refNum){
 		switch(refNum){
 			case 1:
-			open_page('',3);
+			open_page('',1);
             break;
 		}
 	}
@@ -542,55 +567,7 @@ $(document).ready(function(){
 	})
 })
 
-/*--------------------- animation javascript -----------------------*/
 
-function s5_pop1() {
-	$('.s5_5').css("display","block");
-	$('.s5_c1ose1').css("display","block");
-	$('.s5_pop1').css("display","none");
-}
-
-function s5_close1() {
-	$('.s5_5').css("display","none");
-	$('.s5_c1ose1').css("display","none");
-	$('.s5_pop1').css("display","block");
-}
-
-
-function pop1() {
-	$('.api').css("display","block");
-	$('.c1ose1').css("display","block");
-	$('.pop1').css("display","none");
-}
-
-function close1() {
-	$('.api').css("display","none");
-	$('.c1ose1').css("display","none");
-	$('.pop1').css("display","block");
-}
-
-function pop2() {
-	$('.ref').css("display","block");
-	$('.close2').css("display","block");
-	$('.pop2').css("display","none");
-}
-
-function close2() {
-	$('.ref').css("display","none");
-	$('.close2').css("display","none");
-	$('.pop2').css("display","block");
-}
-
-
-$(document).on("touchstart",".homebtn" , function (event) {
-         open_page("",1);
-        });
-$(document).on("touchstart",".sumbtn" , function (event) {
-         open_page("",7);
-        });
-		
-		
-		
 //----------------------------------//
 
 function pop_open() {
@@ -606,16 +583,74 @@ function pop_close() {
 }
 
 
-function kol() {
-	$('video').css("display","block");
-	$('.closekol').css("display","block");
-	document.getElementById("myVideo").play();
+$(document).on("touchstart",".homebtn1" , function (event) {
+         open_page("",3);
+});
+
+$(document).on("touchstart",".homebtn2" , function (event) {
+         open_page("",5);
+});
+
+$(document).on("touchstart",".homebtn3" , function (event) {
+         open_page("",8);
+});
+
+$(document).on("touchstart",".homebtn4" , function (event) {
+         open_page("",9);
+});
+
+$(document).on("touchstart",".homebtn5" , function (event) {
+         open_page("",10);
+});
+
+
+
+function pop4_open1() {
+	$('.pop1').css("display","block");
+	$('.pop_close1').css("display","block");
+	$('.pop_open1').css("display","none");
 }
 
-function closekol() {
-	$('video').css("display","none");
-	$('.closekol').css("display","none");
-	var vid = document.getElementById("myVideo");
-	vid.pause();
-	vid.currentTime = 0;
+function pop4_close1() {
+	$('.pop1').css("display","none");
+	$('.pop_close1').css("display","none");
+	$('.pop_open1').css("display","block");
+}
+
+function pop4_open2() {
+	$('.pop2').css("display","block");
+	$('.pop_close2').css("display","block");
+	$('.pop_open2').css("display","none");
+}
+
+function pop4_close2() {
+	$('.pop2').css("display","none");
+	$('.pop_close2').css("display","none");
+	$('.pop_open2').css("display","block");
+}
+
+
+
+function pop12_open1() {
+	$('.pop1').css("display","block");
+	$('.pop_close1').css("display","block");
+	$('.pop_open1').css("display","none");
+}
+
+function pop12_close1() {
+	$('.pop1').css("display","none");
+	$('.pop_close1').css("display","none");
+	$('.pop_open1').css("display","block");
+}
+
+function pop12_open2() {
+	$('.pop2').css("display","block");
+	$('.pop_close2').css("display","block");
+	$('.pop_open2').css("display","none");
+}
+
+function pop12_close2() {
+	$('.pop2').css("display","none");
+	$('.pop_close2').css("display","none");
+	$('.pop_open2').css("display","block");
 }
