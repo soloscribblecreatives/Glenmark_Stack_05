@@ -10,6 +10,18 @@
 	z-index: 1;
 }
 
+.logo {
+  position: absolute;
+  left: 514px;
+  top: 416px;
+  width: 123px;
+  height: 248px;
+  animation: pulse 1s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
 .pop1 {
 	position: absolute;
 	width: 1024px;

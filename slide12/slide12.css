@@ -10,6 +10,30 @@
 	z-index: 1;
 }
 
+.logo1 {
+  position: absolute;
+  left: 54px;
+  top: 321px;
+  width: 109px;
+  height: 111px;
+  animation: pulse 1s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
+.logo2 {
+  position: absolute;
+  left: 501px;
+  top: 333px;
+  width: 94px;
+  height: 96px;
+  animation: pulse 1s infinite;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  z-index: 2;
+}
+
 .pop1 {
 	position: absolute;
 	width: 1024px;
@@ -20,10 +44,10 @@
 
 .pop_open1 {
 	position: absolute;
-  left: 54px;
-  top: 320px;
-  width: 442px;
-  height: 322px;
+  left: 19px;
+  top: 292px;
+  width: 181px;
+  height: 165px;
 	z-index: 5;
 }
 
@@ -45,10 +69,10 @@
 
 .pop_open2 {
 	position: absolute;
-  left: 499px;
-  top: 320px;
-  width: 442px;
-  height: 322px;
+  left: 457px;
+  top: 292px;
+  width: 181px;
+  height: 165px;
 	z-index: 5;
 }
 

@@ -12,10 +12,10 @@
 
 .logo {
   position: absolute;
-  left: 738px;
-  top: 363px;
-  width: 50px;
-  height: 150px;
+  left: 228px;
+  top: 314px;
+  width: 677px;
+  height: 159px;
   animation: pulse 1s infinite;
   animation-delay: 0s;
   animation-fill-mode: both;
@@ -24,45 +24,54 @@
 
 .homebtn1 {
   position: absolute;
-  left: 211px;
-  top: 351px;
-  width: 217px;
-  height: 83px;
+  left: 213px;
+  top: 303px;
+  width: 227px;
+  height: 88px;
   z-index: 254;
 }
 
 .homebtn2 {
   position: absolute;
-  left: 446px;
-  top: 351px;
-  width: 217px;
-  height: 83px;
+  left: 453px;
+  top: 303px;
+  width: 227px;
+  height: 88px;
   z-index: 254;
 }
 
 .homebtn3 {
   position: absolute;
-  left: 681px;
-  top: 351px;
-  width: 217px;
-  height: 83px;
+  left: 692px;
+  top: 303px;
+  width: 227px;
+  height: 88px;
   z-index: 254;
 }
 
 .homebtn4 {
   position: absolute;
-  left: 298px;
-  top: 445px;
-  width: 217px;
-  height: 83px;
+  left: 213px;
+  top: 396px;
+  width: 227px;
+  height: 88px;
   z-index: 254;
 }
 
 .homebtn5 {
   position: absolute;
-  left: 580px;
-  top: 445px;
-  width: 217px;
-  height: 83px;
+  left: 453px;
+  top: 396px;
+  width: 227px;
+  height: 88px;
+  z-index: 254;
+}
+
+.homebtn6 {
+  position: absolute;
+  left: 692px;
+  top: 396px;
+  width: 227px;
+  height: 88px;
   z-index: 254;
 }
