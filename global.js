@@ -198,7 +198,7 @@ if (typeof(localStorage.getItem('currentslide'))!='undefined' && localStorage.ge
 	
  } 
  
-	if(nextSlideNo <= 15){//number 3 is number of total slides present
+	if(nextSlideNo <= 7){//number 3 is number of total slides present
 	// alert(nextSlideNo);
 	var tempNext = localStorage.getItem(currentContentId+"_"+contentName+"_slideNo_"+nextSlideNo);
 
@@ -302,10 +302,10 @@ if(direction == 'b') {
 //custom slide changes ends here....
 
 	else{
-	if(page_id <= 15){
+	if(page_id <= 7){
 		page_id = page_id + 1;
 		//alert(page_id);
-		if(page_id == 16){
+		if(page_id == 8){
             flag=1;
         }
 	}
@@ -385,49 +385,25 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide1/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide1/2.png"/></div><div class="homebtn1"></div><div class="homebtn2"></div><div class="homebtn3"></div><div class="homebtn4"></div><div class="homebtn5"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><video width="1024" height="768" controls autoplay><source src="slide1/1.mp4" type="video/mp4"></video>';
 	break;
 	case 2:
-	content='<link rel="stylesheet" type="text/css" href="slide2/slide2.css" media="screen"/><div class="background"><img src="slide2/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide2/2.png"/></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide2/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 3:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide3/1.png" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide3/1.jpg" width="1024" height="768" alt=""></div><div class="hit_0"><img src="slide3/2.jpg" width="1024" height="768" alt=""/></div><div class="hit_1"><img src="slide3/3.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop1" onclick="hit_pop1()"></div><div class="hit_2"><img src="slide3/4.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop2" onclick="hit_pop2()"></div><div class="hit_3"><img src="slide3/5.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop3" onclick="hit_pop3()"></div><div class="hit_4"><img src="slide3/6.jpg" width="1024" height="768" alt=""/></div><div class="hit_pop4" onclick="hit_pop4()"></div><div class="hit_close1" onclick="hit_close1()"></div>';
 	break;
 	case 4:
-	content='<link rel="stylesheet" type="text/css" href="slide4/slide4.css" media="screen"/><div class="background"><img src="slide4/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide4/2.png"/></div><div class="pop1"><img src="slide4/3.png" width="1024" height="768"></div><div class="pop_open1" onclick="pop4_open1()"></div><div class="pop_close1" onclick="pop4_close1()"></div><div class="pop2"><img src="slide4/4.png" width="1024" height="768"></div><div class="pop_open2" onclick="pop4_open2()"></div><div class="pop_close2" onclick="pop4_close2()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide4/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 5:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide5/1.png" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide5/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 6:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide6/1.png" width="1024" height="768" alt=""></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide6/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 	case 7:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide7/1.png" width="1024" height="768" alt=""></div>';
-	break;
-	case 8:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide8/1.png" width="1024" height="768" alt=""></div>';
-	break;
-	case 9:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide9/1.png" width="1024" height="768" alt=""></div>';
-	break;
-	case 10:
-	content='<link rel="stylesheet" type="text/css" href="slide10/slide2.css" media="screen"/><div class="background"><img src="slide10/1.png" width="1024" height="768" alt=""></div><div class="logo"><img src="slide10/2.png"/></div><div class="homebtn10"></div><div class="homebtn11"></div><div class="homebtn12"></div><div class="homebtn13"></div>';
-	break;
-	case 11:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide11/1.png" width="1024" height="768" alt=""></div>';
-	break;
-	case 12:
-	content='<link rel="stylesheet" type="text/css" href="slide12/slide12.css" media="screen"/><div class="background"><img src="slide12/1.png" width="1024" height="768" alt=""></div><div class="logo1"><img src="slide12/2.png"/></div><div class="logo2"><img src="slide12/3.png"/></div><div class="pop1"><img src="slide12/4.png" width="1024" height="768"></div><div class="pop_open1" onclick="pop12_open1()"></div><div class="pop_close1" onclick="pop12_close1()"></div><div class="pop2"><img src="slide12/5.png" width="1024" height="768"></div><div class="pop_open2" onclick="pop12_open2()"></div><div class="pop_close2" onclick="pop12_close2()"></div>';
-	break;
-	case 13:
-	content='<link rel="stylesheet" type="text/css" href="slide13/slide2.css" media="screen"/><div class="background"><img src="slide13/1.png" width="1024" height="768" alt=""></div><div class="pop1"><img src="slide13/2.png" width="1024" height="768"></div><div class="pop_open1" onclick="pop12_open1()"></div><div class="pop_close1" onclick="pop12_close1()"></div>';
-	break;
-	case 14:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide2.css" media="screen"/><div class="background"><img src="slide14/1.png" width="1024" height="768" alt=""></div>';
-	break;
-	case 15:
-	content='<link rel="stylesheet" type="text/css" href="slide15/slide2.css" media="screen"/><div class="background"><img src="slide15/1.png" width="1024" height="768" alt=""></div><div class="pop1"><img src="slide15/2.png" width="1024" height="768"></div><div class="pop_open1" onclick="pop12_open1()"></div><div class="pop_close1" onclick="pop12_close1()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"><img src="slide7/1.jpg" width="1024" height="768" alt=""></div>';
 	break;
 }
 
@@ -571,110 +547,69 @@ $(document).ready(function(){
 })
 
 
-//----------------------------------//
+/*--------------------- animation javascript -----------------------*/
 
-function pop_open() {
-	$('.popup').css('display','block');
-	$('.pop_open').css('display','none');
-	$('.pop_close').css('display','block');
+function hit_pop1() {
+	$('.hit_0').css("display","block");
+	$('.hit_1').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop1').css("display","none");
 }
 
-function pop_close() {
-	$('.popup').css('display','none');
-	$('.pop_open').css('display','block');
-	$('.pop_close').css('display','none');
+function hit_pop2() {
+	$('.hit_2').css("display","block");
+	$('.hit_close1').css("display","none");
+	$('.hit_pop2').css("display","none");
 }
 
-
-$(document).on("touchstart",".homebtn1" , function (event) {
-         open_page("",3);
-});
-
-$(document).on("touchstart",".homebtn2" , function (event) {
-         open_page("",5);
-});
-
-$(document).on("touchstart",".homebtn3" , function (event) {
-         open_page("",8);
-});
-
-$(document).on("touchstart",".homebtn4" , function (event) {
-         open_page("",9);
-});
-
-$(document).on("touchstart",".homebtn5" , function (event) {
-         open_page("",10);
-});
-
-$(document).on("touchstart",".homebtn6" , function (event) {
-         open_page("",14);
-});
-
-
-
-$(document).on("touchstart",".homebtn10" , function (event) {
-         open_page("",11);
-});
-
-$(document).on("touchstart",".homebtn11" , function (event) {
-         open_page("",9);
-});
-
-$(document).on("touchstart",".homebtn12" , function (event) {
-         open_page("",12);
-});
-
-$(document).on("touchstart",".homebtn13" , function (event) {
-         open_page("",9);
-});
-
-
-function pop4_open1() {
-	$('.pop1').css("display","block");
-	$('.pop_close1').css("display","block");
-	$('.pop_open1').css("display","none");
+function hit_pop3() {
+	$('.hit_3').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop3').css("display","none");
 }
 
-function pop4_close1() {
-	$('.pop1').css("display","none");
-	$('.pop_close1').css("display","none");
-	$('.pop_open1').css("display","block");
+function hit_pop4() {
+	$('.hit_4').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop4').css("display","none");
 }
 
-function pop4_open2() {
-	$('.pop2').css("display","block");
-	$('.pop_close2').css("display","block");
-	$('.pop_open2').css("display","none");
+function hit_pop5() {
+	$('.hit_5').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop5').css("display","none");
 }
 
-function pop4_close2() {
-	$('.pop2').css("display","none");
-	$('.pop_close2').css("display","none");
-	$('.pop_open2').css("display","block");
+function hit_pop6() {
+	$('.hit_6').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop6').css("display","none");
 }
 
-
-
-function pop12_open1() {
-	$('.pop1').css("display","block");
-	$('.pop_close1').css("display","block");
-	$('.pop_open1').css("display","none");
+function hit_pop7() {
+	$('.hit_7').css("display","block");
+	$('.hit_close1').css("display","block");
+	$('.hit_pop7').css("display","none");
 }
 
-function pop12_close1() {
-	$('.pop1').css("display","none");
-	$('.pop_close1').css("display","none");
-	$('.pop_open1').css("display","block");
+function hit_close1() {
+	$('.hit_1').css("display","none");
+	$('.hit_2').css("display","none");
+	$('.hit_3').css("display","none");
+	$('.hit_4').css("display","none");
+	$('.hit_5').css("display","none");
+	$('.hit_6').css("display","none");
+	$('.hit_7').css("display","none");
+	$('.hit_pop1').css("display","block");
+	$('.hit_pop2').css("display","block");
+	$('.hit_pop3').css("display","block");
+	$('.hit_pop4').css("display","block");
+	$('.hit_pop5').css("display","block");
+	$('.hit_pop6').css("display","block");
+	$('.hit_pop7').css("display","block");
+	$('.hit_close1').css("display","none");
 }
 
-function pop12_open2() {
-	$('.pop2').css("display","block");
-	$('.pop_close2').css("display","block");
-	$('.pop_open2').css("display","none");
-}
-
-function pop12_close2() {
-	$('.pop2').css("display","none");
-	$('.pop_close2').css("display","none");
-	$('.pop_open2').css("display","block");
+function takeCover() {
+		open_page("",1);
 }
