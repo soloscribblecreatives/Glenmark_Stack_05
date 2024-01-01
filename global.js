@@ -593,6 +593,7 @@ function hit_pop7() {
 }
 
 function hit_close1() {
+	$('.hit_0').css("display","none");
 	$('.hit_1').css("display","none");
 	$('.hit_2').css("display","none");
 	$('.hit_3').css("display","none");
