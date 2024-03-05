@@ -12,14 +12,14 @@
 
 .takeCover {
 	position: absolute;
-  left: 784px;
-  top: 652px;
-  width: 60px;
-  height: 116px;
+  left: 853px;
+  top: 702px;
+  width: 38px;
+  height: 66px;
 	z-index: 10;
 }
 
-.hit_1, .hit_2, .hit_3, .hit_4, .hit_5, .hit_6, .hit_7  {
+.hit_1, .hit_2, .hit_3, .hit_4 {
   position: absolute;
   width: 1024px;
   height: 768px;
@@ -29,64 +29,37 @@
 
 .hit_pop1 {
 	position: absolute;
-  left: 847px;
-  top: 652px;
-  width: 60px;
-  height: 116px;
+  left: 892px;
+  top: 702px;
+  width: 38px;
+  height: 66px;
 	z-index: 10;
 }
 
 .hit_pop2 {
 	position: absolute;
-  left: 910px;
-  top: 652px;
-  width: 60px;
-  height: 116px;
+  left: 931px;
+  top: 702px;
+  width: 38px;
+  height: 66px;
 	z-index: 10;
 }
 
 .hit_pop3 {
 	position: absolute;
-  left: 368px;
-  top: 434px;
-  width: 140px;
-  height: 186px;
+  left: 93px;
+  top: 697px;
+  width: 47px;
+  height: 71px;
 	z-index: 10;
 }
 
 .hit_pop4 {
 	position: absolute;
-  left: 513px;
-  top: 503px;
-  width: 140px;
-  height: 186px;
-	z-index: 10;
-}
-
-.hit_pop5 {
-	position: absolute;
-  left: 659px;
-  top: 435px;
-  width: 140px;
-  height: 186px;
-	z-index: 10;
-}
-
-.hit_pop6 {
-	position: absolute;
-  left: 805px;
-  top: 586px;
-  width: 140px;
-  height: 105px;
-	z-index: 10;
-}
-
-.hit_pop7 {
-	position: absolute;
-  left: 805px;
-  top: 479px;
-  width: 140px;
-  height: 105px;
+  left: 516px;
+  top: 513px;
+  width: 464px;
+  height: 206px;
 	z-index: 10;
 }
 
