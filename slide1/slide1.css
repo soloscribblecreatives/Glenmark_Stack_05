@@ -1,73 +1,81 @@
-*{
+* {
 	margin: 0px;
 	padding: 0px;
 }
 
-.s1_1 {
+.background {
 	position: absolute;
 	width: 1024px;
 	height: 768px;
 	z-index: 1;
 }
 
-.s1_2 {
+.video1 {
 	position: absolute;
-  left: 288px;
-  top: 464px;
-  width: 178px;
-  height: 181px;
-	z-index: 5;
+	width: 1024px;
+	height: 768px;
+	z-index:5;
 }
 
-.s1_3 {
+.button1 {
 	position: absolute;
-  left: 558px;
-  top: 530px;
-  width: 178px;
-  height: 181px;
-	z-index: 5;
+	width: 1024px;
+	height: 768px;
+	z-index: 50;
 }
 
-.s1_4 {
+.video2 {
 	position: absolute;
-  left: 268px;
-  top: 444px;
-  width: 218px;
-  height: 221px;
-	animation: none 0.3s;
-	animation-delay: 1s;
-	animation-fill-mode: both;
+	width: 1024px;
+	height: 768px;
 	display: none;
-	z-index: 10;
+	z-index:10;
 }
 
-.s1_5 {
+.button2 {
 	position: absolute;
-  left: 538px;
-  top: 510px;
-  width: 218px;
-  height: 221px;
-	animation: none 0.3s;
-	animation-delay: 1s;
-	animation-fill-mode: both;
+  left: 100px;
+  top: 217px;
+  width: 242px;
+  height: 182px;
 	display: none;
-	z-index: 10;
+	z-index: 50;
 }
 
-.yes {
+.video3 {
 	position: absolute;
-  left: 236px;
-  top: 430px;
-  width: 265px;
-  height: 261px;
-	z-index: 15;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index:15;
 }
 
-.no {
+.button3 {
 	position: absolute;
-  left: 522px;
-  top: 483px;
-  width: 265px;
-  height: 261px;
-	z-index: 15;
+  left: 714px;
+  top: 197px;
+  width: 242px;
+  height: 182px;
+	display: none;
+	z-index: 50;
+}
+
+.button4 {
+	position: absolute;
+  left: 150px;
+  top: 446px;
+  width: 242px;
+  height: 182px;
+	display: none;
+	z-index: 50;
+}
+
+.button5 {
+	position: absolute;
+  left: 606px;
+  top: 460px;
+  width: 242px;
+  height: 182px;
+	display: none;
+	z-index: 50;
 }
