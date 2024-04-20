@@ -13,7 +13,7 @@
 .video1 {
 	position: absolute;
 	width: 1024px;
-	height: 768px;
+	height: 670px;
 	z-index:5;
 }
 
@@ -21,61 +21,21 @@
 	position: absolute;
 	width: 1024px;
 	height: 768px;
-	z-index: 50;
+	z-index: 999;
+}
+
+.button2 {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	display: none;
+	z-index: 999;
 }
 
 .video2 {
 	position: absolute;
 	width: 1024px;
-	height: 768px;
+	height: 670px;
 	display: none;
 	z-index:10;
-}
-
-.button2 {
-	position: absolute;
-  left: 100px;
-  top: 217px;
-  width: 242px;
-  height: 182px;
-	display: none;
-	z-index: 50;
-}
-
-.video3 {
-	position: absolute;
-	width: 1024px;
-	height: 768px;
-	display: none;
-	z-index:15;
-}
-
-.button3 {
-	position: absolute;
-  left: 714px;
-  top: 197px;
-  width: 242px;
-  height: 182px;
-	display: none;
-	z-index: 50;
-}
-
-.button4 {
-	position: absolute;
-  left: 150px;
-  top: 446px;
-  width: 242px;
-  height: 182px;
-	display: none;
-	z-index: 50;
-}
-
-.button5 {
-	position: absolute;
-  left: 606px;
-  top: 460px;
-  width: 242px;
-  height: 182px;
-	display: none;
-	z-index: 50;
 }

@@ -347,7 +347,7 @@ currentSlide();
 var selectedContentPath='';
 switch(pg_id){
 	case 1:
-	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="video1"><video autoplay poster="slide1/Poster.png" onplay="onPlay()" onended="onEnded1()" id="startVideo" width="1024" height="768"><source src="slide1/Part1.mp4" type="video/mp4"></video></div><div class="video2"><video onended="onEnded2()" id="midVideo" width="1024" height="768"><source src="slide1/Part2.mp4" type="video/mp4"></video></div><div class="video3"><video onended="onEnded3()" id="endVideo" width="1024" height="768"><source src="slide1/Part3.mp4" type="video/mp4"></video></div><div class="button1" onclick="playVid1()"></div><div class="button2" onclick="playVid2()"></div><div class="button3" onclick="playVid3()"></div><div class="button4" onclick="playVid4()"></div><div class="button5" onclick="playVid5()"></div>';
+	content='<link rel="stylesheet" type="text/css" href="slide1/slide1.css" media="screen"/><div class="background"></div><div class="button1" onclick="playVid1()"></div><div class="video1"><video autoplay onended="myFunction()" poster="slide1/Poster.png" id="startVideo" width="1024" height="768"><source src="slide1/Part1.mp4" type="video/mp4"></video></div><div class="button2" onclick="playVid2()"></div><div class="video2"><video id="endVideo" width="1024" height="768"><source src="slide1/Part2.mp4" type="video/mp4"></video></div>';
 	break;
 
 }
@@ -492,75 +492,21 @@ $(document).ready(function(){
 
 /*--------------------------Javascript Animation-----------------------------*/
 
-function onPlay() {
-	$('.button1').css("display","none");
-}
-
 function playVid1() {
-	$('.button1').css("display","none");
 	document.getElementById("startVideo").play();
 }
 
-function onEnded1() {
+function myFunction() {
 	$('.button1').css("display","none");
 	$('.button2').css("display","block");
-	$('.button3').css("display","block");
-	$('.button4').css("display","block");
-	$('.button5').css("display","block");
-}
+};
 
 function playVid2() {
-	$('.button1').css("display","none");
 	$('.button2').css("display","none");
-	$('.button3').css("display","none");
-	$('.button4').css("display","none");
-	$('.button5').css("display","none");
 	$(".video1").css("display","none");
 	var vid = document.getElementById("startVideo");
 	vid.pause();
 	vid.currentTime = 0;
 	$(".video2").css("display","block");
-	document.getElementById("midVideo").play();
-}
-
-function playVid3() {
-	$('.button1').css("display","none");
-	$('.button2').css("display","none");
-	$('.button3').css("display","none");
-	$('.button4').css("display","none");
-	$('.button5').css("display","none");
-	$(".video2").css("display","none");
-	var vid = document.getElementById("midVideo");
-	vid.pause();
-	vid.currentTime = 0;
-	$(".video3").css("display","block");
 	document.getElementById("endVideo").play();
-}
-
-function playVid4() {
-	$('.button1').css("display","none");
-	$('.button2').css("display","none");
-	$('.button3').css("display","none");
-	$('.button4').css("display","none");
-	$('.button5').css("display","none");
-	$(".video2").css("display","none");
-	var vid = document.getElementById("midVideo");
-	vid.pause();
-	vid.currentTime = 0;
-	$(".video3").css("display","block");
-	document.getElementById("endVideo").play();
-}
-
-function playVid5() {
-	$('.button1').css("display","none");
-	$('.button2').css("display","none");
-	$('.button3').css("display","none");
-	$('.button4').css("display","none");
-	$('.button5').css("display","none");
-	$(".video2").css("display","none");
-	var vid = document.getElementById("midVideo");
-	vid.pause();
-	vid.currentTime = 0;
-	$(".video3").css("display","block");
-	document.getElementById("endVideo").play();
-}
+};
