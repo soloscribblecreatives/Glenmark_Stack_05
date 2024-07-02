@@ -588,6 +588,8 @@ function hit_close1() {
 	$('.hit_5').css("display","none");
 	$('.hit_pop1').css("display","block");
 	$('.hit_pop2').css("display","block");
+	$('.hit_pop3').css("display","none");
 	$('.hit_pop4').css("display","block");
+	$('.hit_pop5').css("display","none");
 	$('.hit_close1').css("display","none");
 }
