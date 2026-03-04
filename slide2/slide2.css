@@ -1,0 +1,22 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.background {
+	position: absolute;
+	width: 1024px;
+	height: 768px;
+	z-index: 1;
+}
+
+/* START BUTTON */
+#startBtn{
+    position:absolute;
+	left: 94px;
+	top: 119px;
+	width: 321px;
+	height: 235px;
+    cursor:pointer;
+    z-index:10;
+}

@@ -1,0 +1,95 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    margin:0;
+    background:#ccc;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:Arial, sans-serif;
+}
+
+#container{
+    position:relative;
+    width:1024px;
+    height:768px;
+    background:#999;
+    overflow:hidden;
+}
+
+/* LEFT SIDE */
+#leftSide{
+    position:absolute;
+    width:512px;
+    height:768px;
+    left:0;
+    top:0;
+}
+
+#leftSide img{
+    position:absolute;
+    width:512px;
+    height:768px;
+}
+
+/* RIGHT SIDE */
+#rightSide{
+    position:absolute;
+    width:512px;
+    height:768px;
+    right:0;
+    top:0;
+    perspective:2000px;
+}
+
+/* PAGE CONTAINER */
+.page{
+    position:absolute;
+    width:512px;
+    height:768px;
+    transform-style:preserve-3d;
+    transform-origin:left center;
+    transition:transform 1.2s ease-in-out;
+}
+
+/* FRONT & BACK */
+.front, .back{
+    position:absolute;
+    width:512px;
+    height:768px;
+    backface-visibility:hidden;
+}
+
+.back{
+    transform:rotateY(180deg);
+}
+
+/* PAGE 4 (next page) */
+#page4{
+    position:absolute;
+    width:512px;
+    height:768px;
+    top:0;
+    left:0;
+    z-index:0;
+}
+
+/* FLIP EFFECT */
+.flip{
+    transform:rotateY(-180deg);
+}
+
+/* START BUTTON */
+#startBtn{
+    position:absolute;
+	left: 94px;
+	top: 119px;
+	width: 321px;
+	height: 235px;
+    cursor:pointer;
+    z-index:10;
+}
